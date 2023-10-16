@@ -8,9 +8,9 @@
 # Walltime requested for job (4 hrs)
 #SBATCH -t 4:00:00
 
-# Request use of 16 cores and 8GB of memory per core on 1 node
+# Request use of 8 cores and 8GB of memory per core on 1 node
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=16
+#SBATCH --ntasks-per-node=8
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=8G
 
