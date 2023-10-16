@@ -5,8 +5,8 @@
 #**********************
 # SLURM JOB INFORMATION
 #**********************
-# Walltime requested for job (2 hrs)
-#SBATCH -t 2:00:00
+# Walltime requested for job (4 hrs)
+#SBATCH -t 4:00:00
 
 # Request use of 16 cores and 8GB of memory per core on 1 node
 #SBATCH --nodes=1
@@ -18,7 +18,7 @@
 #SBATCH -p batch
 
 # Job Name
-#SBATCH -J isca_held_saurez 
+#SBATCH -J isca_frierson
 
 # SLURM output (*.out) file name
 # Use '%x' for Job Name,'%A' for array-job ID, '%j' for job ID and '%a' for task ID`
@@ -46,5 +46,5 @@ GFDL_DATA=/oscar/scratch/$USER/isca/data
 # activate environment
 source $GFDL_BASE/../bin/activate
 # run the case
-cd $GFDL_BASE/exp/test_cases/held_suarez
-python held_suarez_test_case.py
+cd $GFDL_BASE/exp/test_cases/frierson
+python frierson_test_case.py
