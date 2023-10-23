@@ -22,6 +22,7 @@ src/atmos_param/socrates/src/trunk*
 # Temporary files
 *.x
 *.o
+*.out
 *~
 ~*
 nohup.out
