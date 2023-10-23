@@ -31,6 +31,8 @@
 #********************
 # COMMANDS TO EXECUTE
 #********************
+# set stack size to unlimited
+ulimit -s unlimited
 # load the required modules
 module load netcdf/4.9.0_gcc_10.2_hdf5_1.12.2_slurm22
 module load hdf5/1.12.2_openmpi_4.0.7_gcc_10.2_slurm22
@@ -39,10 +41,10 @@ module load git/2.29.2
 module load python/3.9.0
 module load gcc/10.2
 # set environment variables (change to suit your needs)
-GFDL_BASE=/oscar/home/$USER/data/isca.venv/Isca
-GFDL_ENV=oscar
-GFDL_WORK=/oscar/scratch/$USER/isca/work
-GFDL_DATA=/oscar/scratch/$USER/isca/data
+export GFDL_BASE=/oscar/home/$USER/data/$USER/isca.venv/Isca
+export GFDL_ENV=oscar
+export GFDL_WORK=/oscar/scratch/$USER/isca/work
+export GFDL_DATA=/oscar/scratch/$USER/isca/data
 # activate environment
 source $GFDL_BASE/../bin/activate
 # run the case
