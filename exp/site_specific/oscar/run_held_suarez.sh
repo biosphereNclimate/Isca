@@ -39,7 +39,7 @@ module load git/2.29.2
 module load python/3.9.0
 module load gcc/10.2
 # set environment variables (change to suit your needs)
-GFDL_BASE=/oscar/home/$USER/data/opt/isca.venv/Isca
+GFDL_BASE=/oscar/home/$USER/data/isca.venv/Isca
 GFDL_ENV=oscar
 GFDL_WORK=/oscar/scratch/$USER/isca/work
 GFDL_DATA=/oscar/scratch/$USER/isca/data

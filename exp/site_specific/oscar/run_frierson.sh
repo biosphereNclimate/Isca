@@ -5,8 +5,8 @@
 #**********************
 # SLURM JOB INFORMATION
 #**********************
-# Walltime requested for job (4 hrs)
-#SBATCH -t 4:00:00
+# Walltime requested for job (24 hrs)
+#SBATCH -t 24:00:00
 
 # Request use of 8 cores and 8GB of memory per core on 1 node
 #SBATCH --nodes=1
@@ -39,7 +39,7 @@ module load git/2.29.2
 module load python/3.9.0
 module load gcc/10.2
 # set environment variables (change to suit your needs)
-GFDL_BASE=/oscar/home/$USER/data/opt/isca.venv/Isca
+GFDL_BASE=/oscar/home/$USER/data/isca.venv/Isca
 GFDL_ENV=oscar
 GFDL_WORK=/oscar/scratch/$USER/isca/work
 GFDL_DATA=/oscar/scratch/$USER/isca/data
