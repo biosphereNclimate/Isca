@@ -5,8 +5,8 @@
 #**********************
 # SLURM JOB INFORMATION
 #**********************
-# Walltime requested for job (24 hrs)
-#SBATCH -t 24:00:00
+# Walltime requested for job (12 hrs)
+#SBATCH -t 12:00:00
 
 # Request use of 8 cores and 8GB of memory per core on 1 node
 #SBATCH --nodes=1
