@@ -39,7 +39,7 @@ module load netcdf-fortran-mpi/4.6.0-ciymq6f
 
 # set environment variables (change to suit your needs)
 export GFDL_BASE=/oscar/home/$USER/data/$USER/isca.venv/Isca
-export GFDL_ENV=oscar
+export GFDL_ENV=gfortran
 export GFDL_WORK=/oscar/scratch/$USER/isca/work
 export GFDL_DATA=/oscar/scratch/$USER/isca/data
 # activate environment
