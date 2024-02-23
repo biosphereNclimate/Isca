@@ -1,0 +1,10 @@
+dask
+f90nml
+ipykernel
+jinja2
+numpy
+pandas
+pytest
+sh
+tqdm
+xarray
