@@ -30,10 +30,19 @@
 #include <sys/resource.h>
 #include <sys/syscall.h>
 
+/* PSH begin Fix for glibc>=2.30 */
+pid_t gettid(void)
+{
+  return syscall(__NR_gettid);
+}
+
+/*
 static pid_t gettid(void)
 {
   return syscall(__NR_gettid);
 }
+ * PSH end
+*/
 
 /*
  * Returns this thread's CPU affinity, if bound to a single core,
