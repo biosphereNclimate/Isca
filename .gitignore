@@ -39,7 +39,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
+#env/   #PSH including this ignores changes in src/extra/env
 build/
 develop-eggs/
 dist/
