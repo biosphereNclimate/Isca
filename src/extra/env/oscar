@@ -6,6 +6,6 @@ export CC=mpicc
 
 module purge
 module load hpcx-mpi/4.1.5rc2s-yflad4v
-module load netcdf-fortran-mpi/4.6.0-ciymq6f
+module load netcdf-mpi/4.9.2-og6h2km
 
 # testing
